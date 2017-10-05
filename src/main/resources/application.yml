@@ -1,0 +1,27 @@
+server:
+  port: 8081
+
+info:
+  component: MS-Course
+  name: mscourse
+
+endpoints:
+  restart:
+    enabled: true
+  shutdown:
+    enabled: true
+  health:
+    sensitive: false
+
+spring:
+  application:
+    name: mscourse
+
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:9090/eureka/
+  instance:
+    preferIpAddress: true

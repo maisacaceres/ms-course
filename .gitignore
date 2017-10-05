@@ -1,0 +1,16 @@
+**/target/
+/mvnw
+/mvnw.cmd
+
+out
+
+*.log.*
+*.log
+*.iml
+.idea
+.project
+.classpath
+.settings/
+
+build
+.gradle
